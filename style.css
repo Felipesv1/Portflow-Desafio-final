@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: montserrat;
+}
+
+.menu{
+    width: 40px;
+    display: none;
+}
+
+.titulo h1{
+    font-weight: bold;
+    font-size: 2rem;
+    width: 100%;
+
+}
+
+.titulo{
+    width: 50%;
+}
+.box-header{
+    width: 100%;
+    height: 80px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.nav-header {
+    width: 40%;
+    margin: 10px;
+}
+.ul-header  {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.nav-header li:hover{
+    cursor: pointer;
+    transform: scale(1.25);
+    font-weight: 900;
+    
+}
+    /*Aqui começa o @media-----------------------*/
+
+@media(max-width:930px){
+.nav-header{
+        width: 50%;
+        margin-right: 50px;
+    }
+
+   
+ }
+
+ @media(max-width:800px){
+
+    .box-header{
+        justify-content: space-evenly;
+    }
+
+    .nav-header{
+      display: none;
+    }
+    figure{
+        width: 350px;
+        height: 80px;
+        background: black;
+        display: flex;
+        justify-content: center;
+        margin-right: 50px;
+    }
+
+    .menu{
+        width: 40px;
+        display: flex;
+
+
+    }
+
+
+ }
+
+ @media(max-width:320px){
+     figure{
+         margin-right: 0;
+     }
+
+     .titulo{
+         position: relative;
+         right: 15px;
+     }
+ }
