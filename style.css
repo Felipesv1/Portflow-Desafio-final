@@ -278,21 +278,46 @@ button{
         }
      }
     @media(max-width:400px){
+        .coluna-img img{
+            width:220px;
+        }
         .copy p{
             font-size: 60%;
+        }
+        .copy{
+            width: 50%;
+            margin-left: 0;
+            margin-top: 20px;
         }
         h6{
             font-size: 1rem;
             font-weight:bold;
             margin-right: 30px;
         }
-    }
 
-    @media(max-width:400px){
-        .coluna-img img{
-            width:220px;
+        .base{
+            position: absolute;
+            top: 210rem;
+            height: 60vw;
+            padding:10px;
         }
-    }
+        .button-topo{
+            position:relative;
+            bottom:50px;
+            left:90px;
+            padding: 10px;
+    
+        }
+        button{
+           background: #333333;
+           color:#cccccc;
+           display:block;
+           padding: 2px;
+           padding-left: 10px;
+           padding-right: 10px;
+        }
+     }
+    
      @media(max-width:320px){
     .titulo h1{
     position: relative;
