@@ -92,6 +92,11 @@
 .coluna-img img {
     width: 300px;
     padding: 5px;
+    transition: 1s all;
+}
+
+.coluna-img img:hover{
+    transform:scale(1.1);
 }
 .coluna-img{
     display: flex;
@@ -129,6 +134,16 @@ h6{
 .list-icons{
     background: none;
 }
+
+.icones img{
+   transition: 0.5s all;
+}
+
+
+.icones img:hover{
+    transform: scale(0.9);
+}
+
 button{
     display:none;
 }
@@ -181,13 +196,37 @@ button{
         }
     }
     @media(max-width:800px){
+
+        .body{
+            overflow-x: hidden;
+        }
         .box-header{
         justify-content: space-evenly;
         height: 40px;
         }
-         .nav-header{
-        display: none;
-         }
+     
+        .ul-header{
+            display: block;
+            width: 100%;
+            flex-direction:column;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            color: #ffffff;
+            position: absolute;
+            left:0;
+            bottom:-140px;
+            transform: translatex(100%);
+        }
+
+        .ul-header .active{
+            transform: translateX(0);
+        }
+
+        .ul-header li{
+            letter-spacing: 2px;
+            margin-top:10px;        }
+
         .menu-off{
         width: 350px;
         height: 40px;
