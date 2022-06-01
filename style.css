@@ -206,23 +206,8 @@ button{
         }
      
         .ul-header{
-            display: block;
-            width: 100%;
-            flex-direction:column;
-            align-items: center;
-            justify-content: center;
-            background-color: black;
-            color: #ffffff;
-            position: absolute;
-            left:0;
-            bottom:-140px;
-            transform: translatex(100%);
+            display: none;
         }
-
-        .ul-header .active{
-            transform: translateX(0);
-        }
-
         .ul-header li{
             letter-spacing: 2px;
             margin-top:10px;        }
@@ -346,10 +331,6 @@ button{
         }
     }
     @media(max-width:440px){
-     .menu-off{
-        width: 40%;
-        margin-right: 60px;
-         }
          .img-orange{
             height:25rem;
          }
