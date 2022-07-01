@@ -45,6 +45,9 @@
     width: 100%;
     justify-content: space-evenly;
 }
+.nav-header li{
+    transition: 0.2s all;
+}
 .nav-header li:hover{
     cursor: pointer;
     transform: scale(1.25);
